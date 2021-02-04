@@ -5,6 +5,15 @@ object Types {
     val b = "hej då"
     val i = 42
     val pi: Double = 3.1415
+    val speech = """ Hejsan 
+detta 
+ska bli 
+4 rader"""
+var firstName = "Jonas"
+var mi = "Bengan"
+var lastName = "Nordsten"
+
+val supernamn = s"$firstName $mi $lastName"
 
     val iIs42 = 42 == i
     
@@ -23,5 +32,10 @@ println ("iIs42 är true")
 else
     println ("iIs42 är false")
 
+    println (speech)
+    println (supernamn)
+
+System.err.println ("Error 404 ")
+ 
     }
 }
