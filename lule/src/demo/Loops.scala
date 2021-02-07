@@ -2,6 +2,10 @@ package demo
 
 import java.util.Random
 
+
+
+import java.util.Random
+
 object Loops {
 
   def test() = {
@@ -12,6 +16,10 @@ object Loops {
     while(running) {
       println("running")
       running = new Random().nextBoolean
+
+
+
+
     }
   }
 }
