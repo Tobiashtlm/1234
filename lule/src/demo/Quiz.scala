@@ -6,7 +6,7 @@ object Quiz {
   def start() = {
     var summa = 0
     var summa1 = 0
-    
+
     println(
       "Svara genom att ange ett av svarsalternativen (1),(2) eller (3). Rätt svar ger 1 poäng, fel svar get minus 1 poäng"
     )
@@ -19,7 +19,9 @@ object Quiz {
 
     if (guess1 == "2") {
       summa = summa + 1
-      println("[31mGrattis du svarade rätt på \u001b[31mfråga\u001b[0m 1! Men den var enkel. ")
+      println(
+        "Grattis du svarade rätt på \u001b[31mfråga\u001b[0m 1! Men den var enkel. "
+      )
     } else {
       println("Loser du svarade fel på fråga 1, det börjar inte bra!")
     }
