@@ -27,8 +27,9 @@ object ListsSuite extends TestSuite {
       val r = Lists.addFirst(1, list)
       assert {
         r == List(1, 2, 3)
-      }
+      } 
     }
+  
 
     test("select elements and ignore duplicates") - {
       val list = List(1, 1, 2, 3, 3, 5, 6, 7)
@@ -54,6 +55,7 @@ object ListsSuite extends TestSuite {
 
       assert {
         result == false
+
       }
     }
     test("join") - {
@@ -69,19 +71,36 @@ object ListsSuite extends TestSuite {
 
     test("dropRight") - {
       val list = List(1, 2, 3, 4, 5)
+
       val r = Lists.dropRight(2, list)
+
       assert {
         r == List(1, 2, 3)
+
       }
     }
 
     test("endsWith") - {
       val list = List(11, 12, 33, 44, 55)
-      val r = Lists.endsWith(2, list)
+      val end = List(44, 55)
+
+      val r = Lists.endsWith(end, list)
+
       assert {
-        r == List(12)
+        r == true
       }
     }
 
+    test("startsWith") - {
+      val list = List(1, 2, 3, 4, 5)
+      val start = 2
+
+      val r = Lists.startsWithInt(start, list)
+
+      assert {
+        r == false
+
+      }
+    }
   }
 }

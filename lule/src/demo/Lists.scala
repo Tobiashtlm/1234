@@ -21,6 +21,8 @@ object Lists {
 
   def dropRight(n: Int, xs: List[Int]): List[Int] = xs.dropRight(n)
 
-  def endsWith
+  def endsWith (x: List[Int], xs: List[Int]) = xs.endsWith(x)
+
+  def startsWithInt (x: Int, xs: List[Int]) = xs.startsWith(List(x))
 
 }
